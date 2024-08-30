@@ -1,0 +1,26 @@
+<html>
+<head>
+<body>
+<html>
+<head>
+<style>
+body{
+background-image: url('pp.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+}
+</style>
+</head>
+<body>
+<img src="ss.png" direction=left length=150 width=250>
+<h2>
+Transaction id:<input type="number" required><br><br>
+<p><h2><i><b>
+IMPORTANT:payment details should be filled 
+</i></b></br>
+    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<form action="cod.html"><button>  DONE    </button>
+</form>
+</body>
+</html>
