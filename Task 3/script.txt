@@ -1,0 +1,29 @@
+let menu = document.querySelector('#menu');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+  menu.classList.toggle('fa-times');
+  navbar.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+  menu.classList.remove('fa-times');
+  navbar.classList.remove('active');
+}
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    
+    const courseProgressData = [
+        { course: 'Course 1', progress: 70 },
+        { course: 'Course 2', progress: 45 },
+        { course: 'Course 3', progress: 85 }
+    ];
+
+    courseProgressData.forEach((course, index) => {
+        const progressElement = document.querySelectorAll('.progress')[index];
+        progressElement.style.width = `${course.progress}%`;
+        progressElement.textContent = `${course.progress}%`;
+    });
+});
+</script>
