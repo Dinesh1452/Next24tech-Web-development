@@ -1,0 +1,16 @@
+document.getElementById('votingForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    const voterId = document.getElementById('voterId').value;
+    const password = document.getElementById('password').value;
+    const candidate = document.getElementById('candidates').value;
+
+    // Validate inputs
+    if (voterId && password && candidate) {
+        // Normally, you would send these details to a server-side script for authentication and vote processing
+        // For demo purposes, we're just displaying a message
+        document.getElementById('message').innerText = `Vote successfully cast for ${candidate}.`;
+    } else {
+        document.getElementById('message').innerText = 'Please fill in all fields.';
+    }
+});
